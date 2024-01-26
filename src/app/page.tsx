@@ -5,17 +5,14 @@ import {
   ResizablePanel,
   ResizablePanelGroup,
 } from "@/components/ui/resizable";
+import MainSection from "./MainSection";
 
 export default function Home() {
   return (
     <main className="flex w-full h-screen ">
       <div className="w-full">
         <Navbar />
-        <ResizablePanelGroup direction="horizontal">
-          <ResizablePanel>One</ResizablePanel>
-          <ResizableHandle withHandle />
-          <ResizablePanel>Two</ResizablePanel>
-        </ResizablePanelGroup>
+        <MainSection />
       </div>
     </main>
   );
